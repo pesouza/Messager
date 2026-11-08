@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurar o Messager"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Use o MESMO código da família nos dois celulares. Quem tiver o código consegue ler e enviar mensagens, então não compartilhe com mais ninguém."
+            android:textColor="@color/text_muted"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Seu nome (aparece para o outro celular)"
+            android:textColor="@color/text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex.: Pai, Lucas"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Código da família"
+            android:textColor="@color/text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:hint="Gere no 1º celular e digite no 2º"
+            android:inputType="textCapCharacters|textNoSuggestions"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/generate"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gerar código novo"
+            android:textAllCaps="false"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Servidor (normalmente não precisa mudar)"
+            android:textColor="@color/text_muted"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"
+            android:textColor="@color/text_muted"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/primary"
+            android:text="Salvar e começar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/battery"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Liberar app da economia de bateria"
+            android:textAllCaps="false"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+</ScrollView>
